@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/max1_hover.svg</file>
+        <file>images/min.svg</file>
+        <file>images/min_hover.svg</file>
+        <file>images/close.svg</file>
+        <file>images/close_hover.svg</file>
+        <file>images/full_screen.svg</file>
+        <file>images/full_screen_hover.svg</file>
+        <file>images/max1.svg</file>
+        <file>images/max2.svg</file>
+        <file>images/max2_hover.svg</file>
+        <file>images/next.svg</file>
+        <file>images/pause.svg</file>
+        <file>images/play.svg</file>
+        <file>images/previous.svg</file>
+        <file>images/stop.svg</file>
+        <file>images/no_sound.svg</file>
+        <file>images/sound.svg</file>
+        <file>images/effect.svg</file>
+        <file>images/effect_hover.svg</file>
+        <file>images/clear.svg</file>
+        <file>images/clear_hover.svg</file>
+        <file>images/left.svg</file>
+        <file>images/left_hover.svg</file>
+        <file>images/right.svg</file>
+        <file>images/right_hover.svg</file>
+        <file>images/list_loop.svg</file>
+        <file>images/one_loop.svg</file>
+    </qresource>
+</RCC>

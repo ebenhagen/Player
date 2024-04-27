@@ -1,0 +1,16 @@
+debug/btnshowlist.o
+debug/effectdialog.o
+debug/main.o
+debug/mainwindow.o
+debug/mybtnsound.o
+debug/slidervolumndialog.o
+debug/titlebar.o
+debug/tmyvideowidget.o
+debug/qrc_res.o
+debug/moc_btnshowlist.o
+debug/moc_effectdialog.o
+debug/moc_mainwindow.o
+debug/moc_mybtnsound.o
+debug/moc_slidervolumndialog.o
+debug/moc_titlebar.o
+debug/moc_tmyvideowidget.o

@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>997</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>宋体</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>视频播放器</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="TitleBar" name="titleBar" native="true"/>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_4" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="widget_3" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="title">
+             <string/>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="TMyVideoWidget" name="videoWidget" native="true"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_2" native="true">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>25</height>
+             </size>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QSlider" name="sliderPosition">
+               <property name="tracking">
+                <bool>false</bool>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>25</height>
+             </size>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="labRatio">
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnStop">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	  border-image: url(:/images/images/stop.svg);
+}
+</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnPrevious">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	  border-image: url(:/images/images/previous.svg);
+}
+</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnPlay">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	  border-image: url(:/images/images/play.svg);
+}
+</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnNext">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	  border-image: url(:/images/images/next.svg);
+}
+</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="MyBtnSound" name="btnSound">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	  border-image: url(:/images/images/sound.svg);
+}
+</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnAdd">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	  border-image: url(:/images/images/effect.svg);
+}
+QPushButton:hover{
+	  border-image: url(:/images/images/effect_hover.svg);
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnEffect">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	  border-image: url(:/images/images/effect.svg);
+}
+QPushButton:hover{
+	  border-image: url(:/images/images/effect_hover.svg);
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnFullScreen">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	  border-image: url(:/images/images/full_screen.svg);
+}
+QPushButton:hover{
+	  border-image: url(:/images/images/full_screen_hover.svg);
+}
+
+</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_5" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="widget_6" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QGroupBox" name="groupBox_2">
+               <property name="title">
+                <string/>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <item>
+                 <widget class="QPushButton" name="btnOneLoop">
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+border-image: url(:/images/images/one_loop.svg);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                  <property name="autoExclusive">
+                   <bool>true</bool>
+                  </property>
+                  <property name="flat">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btnLoop">
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+border-image: url(:/images/images/list_loop.svg);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                  <property name="checked">
+                   <bool>true</bool>
+                  </property>
+                  <property name="autoExclusive">
+                   <bool>true</bool>
+                  </property>
+                  <property name="flat">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnRemove">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	  border-image: url(:/images/images/close.svg);
+}
+QPushButton:hover{
+	  border-image: url(:/images/images/close_hover.svg);
+}
+</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnClear">
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	  border-image: url(:/images/images/clear.svg);
+}
+QPushButton:hover{
+	  border-image: url(:/images/images/clear_hover.svg);
+}
+</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="listWidget"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>TMyVideoWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">tmyvideowidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TitleBar</class>
+   <extends>QWidget</extends>
+   <header location="global">titlebar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MyBtnSound</class>
+   <extends>QPushButton</extends>
+   <header location="global">mybtnsound.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,16 @@
+release/btnshowlist.o
+release/effectdialog.o
+release/main.o
+release/mainwindow.o
+release/mybtnsound.o
+release/slidervolumndialog.o
+release/titlebar.o
+release/tmyvideowidget.o
+release/qrc_res.o
+release/moc_btnshowlist.o
+release/moc_effectdialog.o
+release/moc_mainwindow.o
+release/moc_mybtnsound.o
+release/moc_slidervolumndialog.o
+release/moc_titlebar.o
+release/moc_tmyvideowidget.o
